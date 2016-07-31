@@ -6,7 +6,13 @@ credit: new Cesium.Credit('’n—‰@ƒ^ƒCƒ‹','','http://maps.gsi.go.jp/development/i
 baseLayerPicker:false
 });
 
-viewer.dataSources.add(Cesium.KmlDataSource.load('cesium.kml'));
+
+function kmlData(_label, _url) {
+	this.label = _label;
+	this.url = _url;
+}
+var kmlDataArray=[];
+kmlDataArray[0]=new kmlData("¢ŠEˆâY",'data/kml/cesium.kml');
 
 
  viewer.camera.flyTo({
