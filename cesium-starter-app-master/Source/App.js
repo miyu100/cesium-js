@@ -6,7 +6,7 @@ credit: new Cesium.Credit('’n—‰@ƒ^ƒCƒ‹','','http://maps.gsi.go.jp/development/i
 baseLayerPicker:false
 });
 
-viewer.dataSources.add(Cesium.KmlDataSource.load('http://miyu100.github.io/cesium-js/cesium-starter-app-master/Source/cesium.kml'));
+viewer.dataSources.add(Cesium.KmlDataSource.load('https://github.com/miyu100/cesium-js/blob/gh-pages/cesium-starter-app-master/Source/cesium.kml'));
 
 
  viewer.camera.flyTo({
