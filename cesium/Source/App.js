@@ -7,10 +7,6 @@ baseLayerPicker:false
 });
 
 
-function kmlData(_label, _url) {
-	this.label = _label;
-	this.url = _url;
-}
 var kmlDataArray=[];
 kmlDataArray[0]=new kmlData("遺産",'cesium/Source/cesium.kml');
 
