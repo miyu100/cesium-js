@@ -10,6 +10,7 @@ baseLayerPicker:false
       destination: Cesium.Cartesian3.fromDegrees(139.4130,35.4122,5000000)
     });
 
+viewer.dataSources.add(Cesium.KmlDataSource.load('http://miyu100.github.io/cesium-js/cesium-starter-app-master/Source/cesium.kml'));
 
 var hcc0 = viewer.entities.add({
   position: Cesium.Cartesian3.fromDegrees( 145.451071,44.333008,0.0),
