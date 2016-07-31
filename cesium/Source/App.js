@@ -1,7 +1,7 @@
  var viewer = new Cesium.Viewer('cesiumContainer',{
 imageryProvider:new Cesium.OpenStreetMapImageryProvider({
 url:'http://cyberjapandata.gsi.go.jp/xyz/std/',
-credit: new Cesium.Credit('’n—‰@ƒ^ƒCƒ‹','','http://maps.gsi.go.jp/development/ichiran.html')
+credit: new Cesium.Credit('â€™nâ€”Ââ€°@Æ’^Æ’CÆ’â€¹','','http://maps.gsi.go.jp/development/ichiran.html')
 }),
 baseLayerPicker:false
 });
@@ -11,8 +11,7 @@ function kmlData(_label, _url) {
 	this.label = _label;
 	this.url = _url;
 }
-var kmlDataArray=[];
-kmlDataArray[0]=new kmlData("¢ŠEˆâY",'cesium/Source/cesium.kml');
+var kmlDataArray=new kmlData("ÂÂ¢Å EË†Ã¢Å½Y",cesium.kml');
 
 
  viewer.camera.flyTo({
