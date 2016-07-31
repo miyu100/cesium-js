@@ -1,5 +1,5 @@
  var viewer = new Cesium.Viewer('cesiumContainer',{
-imageryProvider:new Cesium.OpenStreetMaplmageryProvider({
+imageryProvider:new Cesium.OpenStreetMapImageryProvider({
 url:'http://cyberjapandata.gsi.go.jp/xyz/std/',
 credit: new Cesium.Credit('’n—‰@ƒ^ƒCƒ‹','','http://maps.gsi.go.jp/development/ichiran.html')
 }),
