@@ -7,11 +7,6 @@ baseLayerPicker:false
 });
 
 
-function kmlData(_label, _url) {
-	this.label = _label;
-	this.url = _url;
-}
-var kmlDataArray=new kmlData("¢ŠEˆâŽY",cesium.kml');
 
 
  viewer.camera.flyTo({
