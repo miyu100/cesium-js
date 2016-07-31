@@ -1,4 +1,10 @@
- var viewer = new Cesium.Viewer('cesiumContainer');
+ var viewer = new Cesium.Viewer('cesiumContainer',{
+imageryProvider:new Cesium.OpenStreetMaplmageryProvider({
+url:'http://cyberjapandata.gsi.go.jp/xyz/std/',
+credit: new Cesium.Credit('’n—‰@ƒ^ƒCƒ‹','','http://maps.gsi.go.jp/development/ichiran.html')
+}),
+baseLayerPicker:false
+});
 
  viewer.camera.flyTo({
       destination: Cesium.Cartesian3.fromDegrees(139.4130,35.4122,5000000)
