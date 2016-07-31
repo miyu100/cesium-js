@@ -1,6 +1,12 @@
- var viewer = new Cesium.Viewer('cesiumContainer');
+ var viewer = new Cesium.Viewer('cesiumContainer',{
+imageryProvider:new Cesium.OpenStreetMapImageryProvider({
+url:'http://cyberjapandata.gsi.go.jp/xyz/std/',
+credit: new Cesium.Credit('ínóùâ@É^ÉCÉã','','http://maps.gsi.go.jp/development/ichiran.html')
+}),
+baseLayerPicker:false
+});
 
-viewer.dataSources.add(Cesium.KmlDataSource.load('http://miyu100.github.io/cesium-js/cesium-starter-app-master/Source/cesium.kml'));
+viewer.dataSources.add(Cesium.KmlDataSource.load('cesium.kml'));
 
 
  viewer.camera.flyTo({
