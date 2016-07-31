@@ -1,28 +1,6 @@
 var cesiumWidget = new Cesium.Viewer('cesiumContainer');
 
 
-var greenCylinder = viewer.entities.add({
-    name : 'Green cylinder with black outline',
-    position: Cesium.Cartesian3.fromDegrees(-100.0, 40.0, 200000.0),
-    cylinder : {
-        length : 400000.0,
-        topRadius : 200000.0,
-        bottomRadius : 200000.0,
-        material : Cesium.Color.GREEN.withAlpha(0.5),
-        outline : true,
-        outlineColor : Cesium.Color.DARK_GREEN
-    }
-});
-
-var redCone = viewer.entities.add({
-    name : 'Red cone',
-    position: Cesium.Cartesian3.fromDegrees(-105.0, 40.0, 200000.0),
-    cylinder : {
-        length : 400000.0,
-        topRadius : 0.0,
-        bottomRadius : 200000.0,
-        material : Cesium.Color.RED
-    }
-});
+viewer.dataSources.add(Cesium.KmlDataSource.load('https://github.com/miyu100/cesium-js/blob/gh-pages/cesium-starter-app-master/Source/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%AA%E3%82%A2.kml)
 
 viewer.zoomTo(viewer.entities);
