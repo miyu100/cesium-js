@@ -7,11 +7,6 @@ baseLayerPicker:false
 });
 
 
-var kmlDataArray=[];
-kmlDataArray[0]=new kmlData("遺産",'cesium/Source/cesium.kml');
-
-
-
 
  viewer.camera.flyTo({
       destination: Cesium.Cartesian3.fromDegrees(139.4130,35.4122,5000000)
