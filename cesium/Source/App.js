@@ -12,27 +12,12 @@ function kmlData(_label, _url) {
 	this.url = _url;
 }
 var kmlDataArray=[];
-kmlDataArray[0]=new kmlData("避難所",'data/kml/hinanjo.kml');
-kmlDataArray[1]=new kmlData("避難場所",'data/kml/hinanbasyo.kml');
+kmlDataArray[0]=new kmlData("遺産",'cesium/Source/cesium.kml');
+
 //オーバレイ配列を用意
 var overlayDataArray=[];
 var openStreetMap = [];
-//ビューア初期化	
-var viewer = new Cesium.Viewer('cesiumContainer',{
-	imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
-		url : '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
-		enablePickFeatures : false
-	}),
-	navigationHelpButton : false,
-	navigationInstructionsInitiallyVisible : false,
-	geocoder:false,
-	timeline: false,
-	animation: false,
-	sceneModePicker:false,
-	baseLayerPicker:false,
-	scene3DOnly : true,
-	terrainExaggeration : 1.0
-});
+
 //地形メッシュを設定
 var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
 	url : '//assets.agi.com/stk-terrain/world',
