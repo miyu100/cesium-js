@@ -14,45 +14,6 @@ function kmlData(_label, _url) {
 var kmlDataArray=[];
 kmlDataArray[0]=new kmlData("遺産",'cesium/Source/cesium.kml');
 
-//オーバレイ配列を用意
-var overlayDataArray=[];
-var openStreetMap = [];
-
-//地形メッシュを設定
-var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
-	url : '//assets.agi.com/stk-terrain/world',
-	requestWaterMask : true,
-	requestVertexNormals : true
-});
-viewer.terrainProvider = cesiumTerrainProviderMeshes;
-//地形を強調する際は値を変更
-<<<<<<< HEAD
-viewer.terrainExaggeration = 3.0;
-=======
-//viewer.terrainExaggeration = 3.0;
->>>>>>> gh-pages
-//フォグ
-var fog = new Cesium.Fog();
-fog.density = 0.0005;
-fog.screenSpaceErrorFactor = 100.0;
-//起動シークエンス
-$(function() {
-	$('.cesium-widget-credits').css('display', 'none');
-});
-fadeInOut(blackOutDiv,0);
-var layers = viewer.scene.imageryLayers;
-setTimeout('groundZero()',1000);
-function groundZero(){
-	changeViewPoint(1,3);
-	openStreetMapLayer();
-	setTimeout('landing()',4000);
-}
-function landing(){
-	changeViewPoint(2,3);
-	setTimeout('fadeInOut(blackOutDiv,1)',3000);
-	setTimeout('loadKml()',3000);
-}
-//KMLロード関数
 function loadKml(){			
 	var i = 0;
 	var load = setInterval(function(){
