@@ -10,23 +10,7 @@ baseLayerPicker:false
 var kmlDataArray=[];
 kmlDataArray[0]=new kmlData("遺産",'cesium/Source/cesium.kml');
 
-function loadKml(){			
-	var i = 0;
-	var load = setInterval(function(){
-		var promise = Cesium.KmlDataSource.load(kmlDataArray[i].url);
-		promise.then(function(dataSource) {
-			viewer.dataSources.add(dataSource);
-		}).otherwise(function(error){
-			alert('KMLデータが読み込めません');
-		});
-		i++;
-		if (i == kmlDataArray.length){
-			clearInterval(load);
-			setClickEvent();
-			setTimeout('fadeInOut(blackOutDiv,0)',3000);
-		}
-	}, 200);
-}
+
 
 
  viewer.camera.flyTo({
