@@ -12,7 +12,7 @@ function kmlData(_label, _url) {
 	this.url = _url;
 }
 var kmlDataArray=[];
-kmlDataArray[0]=new kmlData("¢ŠEˆâY",'data/kml/cesium.kml');
+kmlDataArray[0]=new kmlData("¢ŠEˆâY",'cesium/Source/cesium.kml');
 
 
  viewer.camera.flyTo({
