@@ -57,4 +57,78 @@ var hcc3 = viewer.entities.add({
   }
 });
 
+var hcc4 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 132.451071,34.333008,0.0),
+  name:'hcc4',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
+
+var hcc5 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 127.451071,26.333008,0.0),
+  name:'hcc5',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
+
+var hcc6 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 135.451071,34.333008,0.0),
+  name:'hcc6',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
+
+var hcc7 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 135.451071,33.333008,0.0),
+  name:'hcc7',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
+
+var hcc8 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 137.451071,36.333008,0.0),
+  name:'hcc8',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
+var hcc9 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 138.451071,35.333008,0.0),
+  name:'hcc9',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
+var hcc10 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 141.451071,39.333008,0.0),
+  name:'hcc10',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
 viewer.dataSources.add(Cesium.KmlDataSource.load('http://miyu100.giyhub.io/cesium-js/cesium/Source/cesium.kml'));
