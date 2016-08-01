@@ -6,7 +6,7 @@ credit: new Cesium.Credit('’n—‰@ƒ^ƒCƒ‹','','http://maps.gsi.go.jp/d
 baseLayerPicker:false
 });
 
-
+viewer.dataSources.add(Cesium.KmlDataSource.load("./cesium.kml"));
 
  viewer.camera.flyTo({
       destination: Cesium.Cartesian3.fromDegrees(139.4130,35.4122,5000000)
@@ -131,4 +131,4 @@ var hcc10 = viewer.entities.add({
     material : Cesium.Color.BLUE.withAlpha(0.5),
   }
 });
-viewer.dataSources.add(Cesium.KmlDataSource.load("./cesium.kml"));
+
