@@ -131,4 +131,13 @@ var hcc10 = viewer.entities.add({
     material : Cesium.Color.BLUE.withAlpha(0.5),
   }
 });
-
+var hcc11 = viewer.entities.add({
+  position: Cesium.Cartesian3.fromDegrees( 132.451071,35.333008,0.0),
+  name:'hcc11',
+  ellipse:{
+    semiMinorAxis : 50000.0,
+    semiMajorAxis : 50000.0,
+    height : 10.0,
+    material : Cesium.Color.BLUE.withAlpha(0.5),
+  }
+});
