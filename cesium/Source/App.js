@@ -131,4 +131,4 @@ var hcc10 = viewer.entities.add({
     material : Cesium.Color.BLUE.withAlpha(0.5),
   }
 });
-viewer.dataSources.add(Cesium.KmlDataSource.load('cesium-js/cesium/Source/cesium.kml'));
+viewer.dataSources.add(Cesium.KmlDataSource.load('./cesium.kml'));
